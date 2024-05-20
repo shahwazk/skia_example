@@ -2,9 +2,8 @@
 
 This is an example CMakeLists based that integrates Google's [Skia](https://skia.org) library.
 
-```
 Skia is an open source 2D graphics library which provides common APIs that work across a variety of hardware and software platforms. It serves as the graphics engine for Google Chrome and ChromeOS, Android, Flutter, and many other products.
-```
+
 
 This repo has only one [main.cpp](src/main.cpp) file that will generate an `output.png` file as shown below using skia's official api usage [page](https://skia.org/docs/user/api/skcanvas_overview/)
 

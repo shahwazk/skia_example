@@ -14,7 +14,7 @@ add_executable(skia_example
 )
 
 # Set Skia directory
-set(SKIA_DIR /home/bot/skia_setup/skia)
+set(SKIA_DIR ${CMAKE_SOURCE_DIR}/../skia_setup/skia)
 
 # find freetype2 and harfbuzz package
 find_package(PkgConfig REQUIRED)

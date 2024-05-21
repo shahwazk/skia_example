@@ -36,6 +36,13 @@ cd skia
 python3 tools/git-sync-deps
 bin/fetch-ninja
 ```
+
+Add the following to the either `~/.bash_profile` or `~/.bashrc` to add emsdk to the path.
+
+```bash
+source "/home/bot/rds_ws/src/skia_setup/skia/third_party/externals/emsdk/emsdk_env.sh"
+```
+
 **RECOMMENDED**
 When running the above commands and syncing deps using commands `python3 tools/git-sync-deps` you might face `Thread failure`. So try to run the command multiple times and see if it works. In case `Thread failure` is still persistent then follow the below steps.
 
@@ -66,6 +73,7 @@ Thanks to [asperite](https://github.com/aseprite) for the next steps on generati
 Some more tools to install if using clang for builing
 ```bash
 sudo apt-get install libc++-dev libc++abi-dev
+sudo apt-get install clang
 ```
 
 1. Generate rules for compiling skia using clang (**recommended** if you have clang compiler):

@@ -12,6 +12,8 @@ add_compile_options(-Wno-shadow)
 
 add_executable(skia_example
   src/main.cpp
+  src/shapes.cpp
+  src/rasterization.cpp
 )
 
 # Set Skia directory

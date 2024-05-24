@@ -1,7 +1,6 @@
 /*
 This code is an example of how to use skia API.
 */
-#include <iostream>
 #include "include/core/SkSurface.h"
 #include "skia_example/rasterization.hpp"
 #include "skia_example/shapes.hpp"

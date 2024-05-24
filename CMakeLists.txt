@@ -21,6 +21,7 @@ set(SKIA_DIR ${CMAKE_SOURCE_DIR}/../skia_setup/skia)
 
 # find freetype2 and harfbuzz package
 find_package(PkgConfig REQUIRED)
+pkg_check_modules(FONTCONFIG REQUIRED fontconfig)
 pkg_check_modules(PC_FREETYPE REQUIRED freetype2)
 pkg_check_modules(PC_HARFBUZZ REQUIRED harfbuzz)
 
@@ -38,6 +39,7 @@ target_link_libraries(skia_example
 )
 
 target_link_libraries(skia_example
+  ${FONTCONFIG_LIBRARIES}
   ${PC_FREETYPE_LIBRARIES}
   ${PC_HARFBUZZ_LIBRARIES}
   GL

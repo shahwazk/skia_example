@@ -92,7 +92,11 @@ sudo apt-get install clang
 Final step:
 
 ```bash
-ninja -C out/Release-x64 skia modules
+# clang
+ninja -C out/Release-clang skia modules
+
+#gcc
+ninja -C out/Release-gcc skia modules
 ```
 Visit official skia [website](https://skia.org/docs/user/build/) for more info on build process.
 
